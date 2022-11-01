@@ -20,8 +20,8 @@ while True:
         delind = int((len(string.ascii_lowercase) - indlowercase) / 2)
         str1 = a[8 + delind]
         str2 = a[10 + delind*3]
-        str3 = a[10 + delind*6 + 2]
-        str4 = a[10 + delind*6 + 4 + delind*4]
+        str3 = a[12 + delind*6]
+        str4 = a[14 + delind*6 + delind*4]
         unobf = str1 + str2 + str3 + str4
         bytes_object = bytes.fromhex(unobf[2:])
         ascii_string = bytes_object.decode("ASCII")
